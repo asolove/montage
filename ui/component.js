@@ -718,7 +718,7 @@ var Component = exports.Component = Target.specialize(/** @lends module:montage/
         value: function() {
             var parentComponent = this.parentComponent;
 
-            if (parentComponent) {
+            if (parentComponent && typeof parentComponent.removeChildComponent === "function") {
                 parentComponent.removeChildComponent(this);
             }
         }
