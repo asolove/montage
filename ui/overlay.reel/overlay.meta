@@ -1,5 +1,5 @@
 {
-    "blueprint_loader_anchor": {
+    "blueprint_overlay_anchor": {
         "prototype": "core/meta/property-blueprint",
         "properties": {
             "name": "anchor",
@@ -9,7 +9,7 @@
             "valueType": "object"
         }
     },
-    "blueprint_loader_position": {
+    "blueprint_overlay_position": {
         "prototype": "core/meta/property-blueprint",
         "properties": {
             "name": "position",
@@ -19,7 +19,7 @@
             "valueType": "object"
         }
     },
-    "blueprint_loader_delegate": {
+    "blueprint_overlay_delegate": {
         "prototype": "core/meta/property-blueprint",
         "properties": {
             "name": "delegate",
@@ -29,7 +29,7 @@
             "valueType": "object"
         }
     },
-    "blueprint_loader_dismissOnExternalInteraction": {
+    "blueprint_overlay_dismissOnExternalInteraction": {
         "prototype": "core/meta/property-blueprint",
         "properties": {
             "name": "dismissOnExternalInteraction",
@@ -60,31 +60,31 @@
             },
             "propertyBlueprints": [
                 {
-                    "@": "blueprint_loader_mainModule"
+                    "@": "blueprint_overlay_mainModule"
                 },
                 {
-                    "@": "blueprint_loader_position"
+                    "@": "blueprint_overlay_position"
                 },
                 {
-                    "@": "blueprint_loader_delegate"
+                    "@": "blueprint_overlay_delegate"
                 },
                 {
-                    "@": "blueprint_loader_dismissOnExternalInteraction"
+                    "@": "blueprint_overlay_dismissOnExternalInteraction"
                 }
             ],
             "propertyBlueprintGroups": {
                 "Overlay": [
                     {
-                        "@": "blueprint_loader_mainModule"
+                        "@": "blueprint_overlay_mainModule"
                     },
                     {
-                        "@": "blueprint_loader_position"
+                        "@": "blueprint_overlay_position"
                     },
                     {
-                        "@": "blueprint_loader_delegate"
+                        "@": "blueprint_overlay_delegate"
                     },
                     {
-                        "@": "blueprint_loader_dismissOnExternalInteraction"
+                        "@": "blueprint_overlay_dismissOnExternalInteraction"
                     }
                 ]
             },
