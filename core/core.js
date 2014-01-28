@@ -56,7 +56,10 @@ var CONSTRUCTOR_COMPATIBILITY = true;
  * @class Montage
  * @classdesc The basis of all types using the MontageJS framework.
  */
+
 var Montage = exports.Montage = function Montage() {};
+Montage.prototype = new Element();
+Montage.prototype.constructor = Montage;
 
 // to monkey patch a method on an object
 Montage.deprecate = deprecate.deprecateMethod(Montage, deprecate.deprecateMethod, "Montage.deprecate", "deprecate module's deprecateMethod");
